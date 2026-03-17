@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osito Picosito</title>
+    <style>
+        #promo-bar {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 10px rgba(255, 77, 77, 0.5);
+        }
+
+        /* Efecto de parpadeo suave para que no la ignoren */
+        @keyframes parpadeo {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        #promo-bar {
+            animation: parpadeo 2s infinite;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f; /* FONDO OSCURO */
+            color: #e0e0e0;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background: #000000;
+            padding: 20px;
+            border-bottom: 3px solid #ff4d4d;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: #1a1a1a;
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1, h2, h3 { color: #ff4d4d; }
+
+        .grid-productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .tarjeta-producto {
+            background-color: #262626;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .imagen-producto {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info-producto { padding: 15px; }
+
+        .precio {
+            color: #2ecc71;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .boton-pedir {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Ajuste para las listas y columnas nuevas */
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        #beneficios-web .info-producto {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        /* Estilo para resaltar los títulos de los beneficios */
+        h4 {
+            color: #2ecc71;
+            margin-bottom: 5px;
+        }
+
+        .columna { text-align: left; margin-bottom: 20px; }
+    </style>
+</head>
+<div id="promo-bar">
+    🔥 ¡PROMOCIÓN DE LANZAMIENTO DIGITAL! Presenta una captura de esta página en el local y obtén 10% de descuento 🔥
+</div>
+<body>
+
+    <header>
+        <div class="logo-sitio">
+            <img src="imagenes/logo-osito.png" alt="Logo" style="max-height: 80px;">
+        </div>
+        <h1>Osito Picosito</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Catálogo</a></li>
+                <li><a href="#contacto">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>¡Explosión de Sabor!</h1>
+        <p>Las gomitas más deliciosas de la comunidad.</p>
+    </section>
+
+    <section id="nosotros-detalle">
+        <div class="columna">
+            <h2>Nuestra Misión</h2>
+            <p>Brindar momentos de alegría con gomitas artesanales de alta calidad y nuestro toque picosito único.</p>
+        </div>
+        <div class="columna">
+            <h2>Nuestra Visión</h2>
+            <p>Visión 2027: "Consolidarnos como la marca líder de snacks picositos en Villahermosa, expandiendo nuestra distribución a través de puntos de venta estratégicos y una plataforma e-commerce que facilite la experiencia de compra de nuestros clientes."</p>
+        </div>
+    </section>
+<section id="valores-proceso">
+        <div class="columna">
+            <h2>Nuestros Valores</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>🔴 <strong>Compromiso:</strong> Entregas puntuales en puntos medios.</li>
+                <li>🔴 <strong>Calidad:</strong> Chile artesanal de la mejor receta tabasqueña.</li>
+                <li>🔴 <strong>Pasión:</strong> Hecho a mano con dedicación.</li>
+            </ul>
+        </div>
+        <div class="columna">
+            <h2>¿Cómo lo hacemos?</h2>
+            <p>Seleccionamos las gomitas más frescas, las bañamos en nuestro chamoy secreto y agregamos el toque exacto de chile en polvo para que no solo piquen, sino que tengan sabor.</p>
+        </div>
+    </section>
+    <section id="productos">
+        <h2>Catálogo Picosito</h2>
+        <div class="grid-productos">
+            <article class="tarjeta-producto">
+                <img src="imagenes/producto-vaso-oso.png" alt="Vaso" class="imagen-producto">
+                <div class="info-producto">
+                    <h3>Vaso Clásico</h3>
+                    <p class="precio">$45.00</p>
+                    <a href="https://wa.me/529371221007?text=Hola!%20Me%20interesa%20el%20Vaso%20Clásico" target="_blank" style="text-decoration: none;">
+    <button class="boton-pedir">Pedir por WhatsApp</button>
+</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto">
+                <img src="imagenes/producto-aros-fresa.png" alt="Aros" class="imagen-producto">
+                <div class="info-producto">
+                    <h3>Aros Frutales</h3>
+                    <p class="precio">$35.00</p>
+                    <a href="https://wa.me/529371221007?text=Hola!%20Quiero%20pedir%20un%20Mix%20de%20Aros" target="_blank" style="text-decoration: none;">
+    <button class="boton-pedir">Pedir por WhatsApp</button>
+</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto">
+                <img src="imagenes/producto-caja-mixta.png" alt="Caja" class="imagen-producto">
+                <div class="info-producto">
+                    <h3>Gomi-Fiesta</h3>
+                    <p class="precio">$120.00</p>
+                    <a href="https://wa.me/529371221007?text=Hola!%20Me%20gustaría%20información%20de%20la%20Gomi-Fiesta" target="_blank" style="text-decoration: none;">
+    <button class="boton-pedir">Pedir por WhatsApp</button>
+</a>
+                </div>
+            </article>
+        </div>
+    </section>
+<section id="beneficios-web" style="border: 1px dashed #ff4d4d;">
+        <h2>¿Por qué Osito Picosito es Digital?</h2>
+        <div class="grid-productos">
+            <div class="info-producto">
+                <h4>Atención 24/7</h4>
+                <p>Nuestros clientes pueden ver el menú a cualquier hora sin preguntar.</p>
+            </div>
+            <div class="info-producto">
+                <h4>Mayor Alcance</h4>
+                <p>Ahora personas de otras colonias pueden conocernos por internet.</p>
+            </div>
+            <div class="info-producto">
+                <h4>Imagen Profesional</h4>
+                <p>Pasamos de ser un negocio pequeño a una marca con identidad digital.</p>
+            </div>
+        </div>
+    </section>
+
+<section id="visitanos" style="background: #111; border-top: 3px solid #ff4d4d;">
+    <h2>¡Visítanos en nuestro local!</h2>
+    <div class="grid-productos">
+        <div class="columna" style="text-align: center; flex: 1;">
+            <p><strong>📍 Dirección:</strong><br>
+            Av. Principal #123, Colonia Centro.<br>
+            Chontalpa Villahermosa, Tabasco.</p>
+            <p><strong>⏰ Horarios:</strong><br>
+            Lunes a Sábado: 10:00 AM - 8:00 PM<br>
+            Domingos: 11:00 AM - 4:00 PM</p>
+        </div>
+        <div class="columna" style="flex: 1; border: 1px solid #333; padding: 10px; border-radius: 10px;">
+            <p><i>"Ahora ya no tienes que preguntar qué hay; consulta nuestro catálogo digital aquí y llega directo por tu favorito."</i></p>
+            <button class="boton-pedir" style="background: #d63031;">Ver mapa en Google Maps</button>
+        </div>
+    </div>
+</section>
+<section id="justificacion" style="background: #000; border: 1px solid #ff4d4d; margin-top: 20px;">
+    <h3>Impacto del Proyecto</h3>
+    <p style="font-size: 0.9rem; color: #bbb;">
+        Este sitio web resuelve la falta de visibilidad del local físico de <b>Osito Picosito</b>. 
+        A través del catálogo digital y la integración con WhatsApp, optimizamos el proceso de pedido 
+        y atraemos clientes jóvenes mediante una interfaz moderna (Dark Mode).
+    </p>
+</section>
+    <footer id="contacto">
+        <h2>Contáctanos</h2>
+        <p>WhatsApp: <strong>937 122 1007</strong></p>
+        <p>Villahermosa, Tabasco</p>
+    </footer>
+
+</body>
+</html>
